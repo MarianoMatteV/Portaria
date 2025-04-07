@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar de veículos</title>
+    <link rel="stylesheet" href="./cadastroCarro.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-box">
+            <form>
+                <h1 id="titulo">Cadastrar Carro</h1>
+                <form>
+                    <label for="placa">Placa do carro</label>
+                <input type="text" id="placa" placeholder="Digite a placa do carro" required>
+
+                <label for="modelo">Modelo do carro</label>
+                <input type="text" id="modelo" placeholder="Digite o modelo do carro" required>
+
+                <label for="cor">Cor do carro</label>
+                <input type="text" id="cor" placeholder="Digite a cor do carro" required>
+
+                <label for="box">Vaga</label>
+                <input type="text" id="box" placeholder="Digite a vaga do seu carro" required>
+
+                <label for="email">Email do dono</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail" required>
+
+                <button type="submit" id="cadastrar"  onclick="cadastrarCarro(event)">Cadastrar</button>
+                </form>
+            </form>
+        </div>
+    </div>
+
+<script src="./cadastroCarro.js"></script>
+</body>
+</html>

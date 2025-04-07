@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cadastro_morador.css">
+    <title>Cadastro de morador</title>
+</head>
+<body>
+      <div class="container" id="container">
+        <div class="form-box">
+            <h1 id="titulo">Cadastrar Usuário</h1>
+            <form>
+              <label for="nome">Nome do morador</label>
+              <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+              <label for="bloco">Bloco do prédio</label>
+              <input type="text" id="bloco" placeholder="Digite o bloco" required>
+
+              <label for="apartamento">Apartamento</label>
+              <input type="text" id="apartamento" placeholder="Digite o número do apartamento" required>
+
+              <label for="telefone">Número de telefone</label>
+              <input type="text" id="telefone" placeholder="Digite seu número de telefone" required>
+
+              <label for="email">E-mail</label>
+              <input type="text" id="email" placeholder="Digite seu E-mail" required>
+
+              <label for="status">Selecione o que você é</label>
+              <select id="status">
+                <option value="residente">Residente</option>
+
+                <option value="proprietario">Proprietário</option>
+
+                <option value="visitante">Visitante</option>
+              </select>
+
+              <button type="submit" class="cadastrar" onclick="cadastrarMorador(event)">Cadastrar</button>
+              <button class="cadastrar" onclick="acessarLista(event)">Acessar a lista de informações</button>
+            </form>
+        </div>
+      </div>
+      <!-- <p id="sizeInfo"></p> -->
+    <script src="./cadastro_morador.js"></script>
+</body>
+</html>

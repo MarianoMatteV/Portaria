@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listar dados</title>
+  <link rel="stylesheet" href="./listar.css">
+</head>
+<body class="tudo">
+    <header class="header">
+        <h1 id="titulo">Portaria</h1>
+        <h2 id="subtitulo">Lista dos moradores:</h2>
+    </header>
+    <main>
+        <table class="tabelaMoradores">
+            <thead>
+              <tr>
+                <th>Nome do morador</th>
+                <th>Bloco do morador</th>
+                <th>Apartamento</th>
+                <th>Telefone</th>
+                <th>Status</th>
+                <!-- Parte do veículo -->
+                <th>Placa:</th>
+                <th>Modelo:</th>
+                <th>Cor:</th>
+                <th>Email</th>
+                <th>Vaga</th>
+                <th>Excluir</th>
+                <th>Editar dados</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                
+              </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal para editar os dados dos moradores -->
+    <div id="modal" class="modal">
+        <div class="conteudoModal">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <h2>Editar informações</h2>
+            <!-- MORADOR -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="bloco">Bloco:</label>
+            <input type="text" id="bloco" required>
+
+            <label for="apartamento">Apartamento:</label>
+            <input type="text" id="apartamento" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" required>
+
+            <label for="status" id="status">Selecione o que você é:</label>
+            <select id="status">
+              <option value="residente">Residente</option>
+              <option value="proprietario">Proprietário</option>
+              <option value="visitante">Visitante</option>
+            </select>
+
+            <!-- VEÍCULO -->
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required>
+    
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required>
+    
+            <label for="cor">Cor:</label>
+            <input type="text" id="cor" required>
+    
+            <label for="box">Escolha uma vaga:</label>
+            <input type="text" id="box" required>
+
+            <button type="submit" onclick="editarDados()">Salvar</button>
+        </div>
+    </div>
+
+    <script src="./listar.js"></script>
+</body>
+</html>
